@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+
+@keyframes gradientText {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .animated-text-gradient {
+    background-size: 200% 200%;
+    animation: gradientText 5s ease infinite;
+  }
+
+
+
+  @keyframes floatUpDown {
+    0% {
+      transform: translateY(-30px);
+      opacity: 0.8;
+    }
+    50% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-30px);
+      opacity: 0.8;
+    }
+  }
+  
+  .animate-float {
+    animation: floatUpDown 3s ease-in-out infinite;
+  }
+
+
+  /* .btn-primary {
+    @apply bg-transparent border-2 border-cyan-300 text-[#FFFFFF] text-xs sm:text-lg md:text-lg lg:text-lg xl:text-lg  p-2 sm:py-2 sm:px-2 md:px-2 md:py-2 lg:px-4 lg:py-2 rounded-lg hover:bg-black hover:scale-110 transition duration-300;
+  } */
+
+  .btn-secondary {
+    @apply w-full bg-transparent border-2 border-cyan-300 text-[#FFFFFF] text-xs sm:text-sm p-2 sm:py-2 sm:px-2 lg:px-4 lg:py-2 rounded-lg hover:bg-black hover:scale-110 transition duration-300;
+  }
