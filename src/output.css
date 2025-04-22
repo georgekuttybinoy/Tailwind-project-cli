@@ -412,11 +412,11 @@
   .max-w-7xl {
     max-width: var(--container-7xl);
   }
+  .max-w-28 {
+    max-width: calc(var(--spacing) * 28);
+  }
   .max-w-32 {
     max-width: calc(var(--spacing) * 32);
-  }
-  .max-w-36 {
-    max-width: calc(var(--spacing) * 36);
   }
   .max-w-48 {
     max-width: calc(var(--spacing) * 48);
@@ -685,6 +685,9 @@
   }
   .text-left {
     text-align: left;
+  }
+  .font-sans {
+    font-family: var(--font-sans);
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -1316,6 +1319,15 @@
 .animate-float {
   animation: floatUpDown 3s ease-in-out infinite;
 }
+.btn-primary {
+  height: 100%;
+  width: 100%;
+  border-radius: var(--radius-md);
+  background-color: var(--color-black);
+  padding-inline: calc(var(--spacing) * 6);
+  padding-block: calc(var(--spacing) * 2);
+  color: var(--color-white);
+}
 .btn-secondary {
   width: 100%;
   border-radius: var(--radius-lg);
@@ -1360,6 +1372,14 @@
   }
   @media (width >= 64rem) {
     padding-block: calc(var(--spacing) * 2);
+  }
+}
+@layer utilities {
+  .bgm-stars {
+    background-image: radial-gradient(white 1px, transparent 0), radial-gradient(white 0.5px, transparent 0), radial-gradient(white 0.5px, transparent 0), radial-gradient(white 1px, transparent 0), radial-gradient(white 0.5px, transparent 0), radial-gradient(white 1px, transparent 0), radial-gradient(white 0.5px, transparent 0);
+    background-position: 20px 30px, 150px 200px, 300px 400px, 600px 450px, 750px 850px, 500px 150px;
+    background-size: 800px 800px, 400px 400px, 700px 700px, 900px 900px;
+    background-repeat: repeat;
   }
 }
 @property --tw-translate-x {
