@@ -47,3 +47,6 @@
   .btn-secondary {
     @apply w-full bg-transparent border-2 border-cyan-300 text-[#FFFFFF] text-xs sm:text-sm p-2 sm:py-2 sm:px-2 lg:px-4 lg:py-2 rounded-lg hover:bg-black hover:scale-110 transition duration-300;
   }
+
+
+ 
